@@ -1,0 +1,56 @@
+{
+  "shark-types": {
+    "pup": {
+      "scrap": 12,
+      "base_size": 25,
+      "supply": 2,
+      "health": 10,
+      "armor": 3,
+      "speed": 6,
+      "actions": 2,
+      "ranged_attacks": 2,
+      "melee_attacks": 4,
+      "fins": 2,
+      "hardpoints": 0
+    },
+    "bull": {
+      "scrap": 16,
+      "base_size": 32,
+      "supply": 4,
+      "health": 18,
+      "armor": 4,
+      "speed": 5,
+      "actions": 2,
+      "ranged_attacks": 4,
+      "melee_attacks": 5,
+      "fins": 2,
+      "hardpoints": 0
+    },
+    "veteran": {
+      "scrap": 25,
+      "base_size": 40,
+      "supply": 6,
+      "health": 25,
+      "armor": 5,
+      "speed": 5,
+      "actions": 2,
+      "ranged_attacks": 6,
+      "melee_attacks": 7,
+      "fins": 2,
+      "hardpoints": 0
+    },
+    "mech": {
+      "scrap": 35,
+      "base_size": 60,
+      "supply": 8,
+      "health": 35,
+      "armor": 6,
+      "speed": 5,
+      "actions": 2,
+      "ranged_attacks": 5,
+      "melee_attacks": 6,
+      "fins": 0,
+      "hardpoints": 2
+    }
+  }
+}
