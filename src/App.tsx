@@ -1,11 +1,14 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useState } from "react";
+import heroImg from "./assets/hero.png";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import "./App.css";
+import { AttributesRow } from "./components/AttributesRow";
+import type { SharkType } from "./types/shark-types";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [type, setType] = useState<SharkType>("pup");
 
   return (
     <>
@@ -16,6 +19,18 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
+          <AttributesRow type="pup" />
+          <div>
+            <div className="flex gap-2">
+              Press one to change:
+              <button className="bg-amber-200 rounded-full p-2 hover:bg-amber-400 hover:cursor-pointer" onClick={() => setType("pup")}>Pup</button>
+              <button className="bg-amber-200 rounded-full p-2 hover:bg-amber-400 hover:cursor-pointer" onClick={() => setType("bull")}>Bull</button>
+              <button className="bg-amber-200 rounded-full p-2 hover:bg-amber-400 hover:cursor-pointer" onClick={() => setType("veteran")}>Veteran</button>
+              <button className="bg-amber-200 rounded-full p-2 hover:bg-amber-400 hover:cursor-pointer" onClick={() => setType("mech")}>Mech</button>
+            </div>
+
+            <AttributesRow type={type} />
+          </div>
           <h1 className="bg-amber-500">Get started</h1>
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
@@ -116,7 +131,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
