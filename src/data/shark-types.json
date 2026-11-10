@@ -1,5 +1,5 @@
 {
-  "shark-types": {
+  "types": {
     "pup": {
       "scrap": 12,
       "base_size": 25,
@@ -8,8 +8,8 @@
       "armor": 3,
       "speed": 6,
       "actions": 2,
-      "ranged_attacks": 2,
-      "melee_attacks": 4,
+      "ranged_attack": 2,
+      "melee_attack": 4,
       "fins": 2,
       "hardpoints": 0
     },
@@ -21,8 +21,8 @@
       "armor": 4,
       "speed": 5,
       "actions": 2,
-      "ranged_attacks": 4,
-      "melee_attacks": 5,
+      "ranged_attack": 4,
+      "melee_attack": 5,
       "fins": 2,
       "hardpoints": 0
     },
@@ -34,8 +34,8 @@
       "armor": 5,
       "speed": 5,
       "actions": 2,
-      "ranged_attacks": 6,
-      "melee_attacks": 7,
+      "ranged_attack": 6,
+      "melee_attack": 7,
       "fins": 2,
       "hardpoints": 0
     },
@@ -47,8 +47,8 @@
       "armor": 6,
       "speed": 5,
       "actions": 2,
-      "ranged_attacks": 5,
-      "melee_attacks": 6,
+      "ranged_attack": 5,
+      "melee_attack": 6,
       "fins": 0,
       "hardpoints": 2
     }
